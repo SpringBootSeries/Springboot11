@@ -3,7 +3,7 @@ package com.backend.Backend.model;
 import jakarta.persistence.*;
 
 import java.util.List;
-
+@Entity
 public class Project {
     @Id
     private String projectId;
