@@ -4,9 +4,11 @@ import com.backend.Backend.model.Employee;
 import com.backend.Backend.repo.EmployeeRepo;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class EmployeeService {
     @Autowired
     private EmployeeRepo repo;
