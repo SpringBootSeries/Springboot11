@@ -9,6 +9,8 @@ public class Employee {
     @Id
     private String empId;
     private double salary;
+    private int age;
+
 
     @ManyToOne
     private Department department;
@@ -63,4 +65,11 @@ public class Employee {
         this.insurance = insurance;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
 }
