@@ -2,12 +2,14 @@ package com.backend.Backend.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 
 import java.util.Date;
 import java.util.List;
 
+@Entity
 public class Department {
     @Id
     @Column(name="dep_id")
