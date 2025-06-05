@@ -4,6 +4,7 @@ import com.backend.Backend.model.Department;
 import com.backend.Backend.model.ViewDepartment;
 import com.backend.Backend.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -56,7 +57,7 @@ public class DepartmentController {
 
     @GetMapping("/empCount/{depid}")
     public ResponseEntity<Integer> empCount(@PathVariable("depid") String depid){
-        return new ResponseEntity<Integer>(service.empCount(depid),HttpStatus.OK);
+        return new ResponseEntity<Integer>(service.empCount(depid), HttpStatus.OK);
     }
 
     @GetMapping("/empCountByView/{depid}")
