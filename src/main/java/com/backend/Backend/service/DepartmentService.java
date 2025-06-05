@@ -79,7 +79,7 @@ public class DepartmentService {
         }
 
         Department department = repo.findById(depid).get();
-        ViewDepartment  viewdepartment=new ViewDepartment()nt(department.getId(),department.getDepName(),
+        ViewDepartment  viewdepartment=new ViewDepartment(department.getId(),department.getDepName(),
                 department.getEstablished(),empCount(depid));
         return viewdepartment;
     }
